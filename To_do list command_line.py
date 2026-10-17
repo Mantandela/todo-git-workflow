@@ -25,7 +25,7 @@ def add_tasks():
     try:
         due_date = datetime.strptime(due_date_str, "%Y-%m-%d")
         tasks.append({"description": description, "due_date": due_date, "completed": False})
-        print("Task added successfully!")
+        print(f"Task added successfully! You now have {len(tasks)} task(s).")
     except ValueError:
         print("Invalid date format. Please use YYYY-MM-DD.")
 
